@@ -1,0 +1,16 @@
+/* RollingText.css */
+
+.rollingtextcontainer {
+  display: flex;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #c51717; /* Adjust color as needed */
+  background-color: #eee; /* Adjust background color as needed */
+  padding: 10px;
+  border-radius: 5px;
+  /* overflow: hidden; */
+}
+
+.rolling-text-container span {
+  margin-right: 4px; /* Adjust spacing between letters */
+}

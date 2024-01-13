@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Hide the scrollbar for all elements */
+::-webkit-scrollbar {
+  display: none;
+}
+body {
+  overflow-y: scroll;
+}
+
+/* Create a container for the custom horizontal scrollbar */
+#horizontal-scrollbar-container {
+  @apply fixed top-0 left-0 w-full h-1 dark:bg-dark bg-light z-50;
+}
+
+/* Style the actual scrollbar progress indicator */
+#horizontal-scrollbar-progress {
+  @apply h-full w-0 bg-dark dark:bg-light transition duration-300 ease-in-out;
+}
+
+.rollingContainer {
+  display: flex;
+}
+
+.rollingLetter {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: roll 1s linear infinite;
+}
+
+@keyframes roll {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
