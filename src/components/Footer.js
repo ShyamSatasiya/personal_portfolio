@@ -8,7 +8,7 @@ function Footer() {
   useEffect(() => {
     const updateDateTime = () => {
       const currentDate = new Date();
-      const day = currentDate.getUTCDate();
+      const day = currentDate.getDate();
       const month = new Intl.DateTimeFormat("en-US", { month: "short" }).format(
         currentDate
       );
