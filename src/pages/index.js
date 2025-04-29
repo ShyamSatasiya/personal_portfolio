@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
 import Layout from "@/components/Layout";
-import profilepic from "../../public/images/profile/Img1.png";
+import profilepic from "../../public/images/profile/Img2.png";
 import Image from "next/image";
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
@@ -19,15 +19,15 @@ export default function Home() {
       <TransitionEffect />
       <main className="flex items-center text-dark w-full min-h-screen dark:text-light">
         <Layout className="pt-0 md:pt-16 sm:pt-8">
-          <div className="flex items-center justify-between w-full lg:flex-col lg:text-center">
-            <div className="w-1/2 md:w-full">
+          <div className="flex items-center justify-center w-full lg:flex-col lg:text-center gap-8">
+            <div className="md:w-full justify-center xl:justify-end sm:w-3/4">
               <Image
                 src={profilepic}
-                alt="Picture of the author"
-                className="w-full h-auto lg:hidden md:inline-block md:w-full"
-                priority={true}
+                alt="Profile picture"
+                className="w-full h-auto max-w-[400px] rounded-full border-2 border-solid border-dark dark:border-light lg:max-w-[300px] md:max-w-[200px] sm:max-w-[150px]"
+                priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
-              ></Image>
+              />
             </div>
             <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center">
               <AnimatedText
@@ -39,7 +39,7 @@ export default function Home() {
                 }
               />
               <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
-                As a results-driven software developer, I bring over a year of
+                As a results-driven software developer, I bring 2+ years of
                 experience in crafting innovative web solutions. Join me on a
                 journey through my portfolio, where you&apos;ll witness the
                 fusion of precision coding and intuitive design.
